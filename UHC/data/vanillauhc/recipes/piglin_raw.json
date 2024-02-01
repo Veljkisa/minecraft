@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " g ",
+        "gPg",
+        " g "
+    ],
+    "key": {
+        "g": {
+            "item": "minecraft:raw_gold"
+        },
+        "P": {
+            "item": "minecraft:piglin_head"
+        }
+    },
+    "result": {
+        "item": "minecraft:golden_apple",
+        "count": 1
+    },
+    "group": "head"
+}
