@@ -1,14 +1,15 @@
 time set 0
 clear @a   
-fill -5 220 -5 5 224 5 minecraft:barrier hollow
-fill -5 224 -5 5 224 5 minecraft:air
+fill -8 220 -8 8 224 8 minecraft:barrier hollow
+fill -8 224 -8 8 224 8 minecraft:air
 tp @a 0 230 0
-gamemode survival @a 
+gamemode survival @a
 
 gamerule naturalRegeneration false
 gamerule announceAdvancements false
 gamerule doWardenSpawning false
 gamerule doInsomnia false
+gamerule keepInventory true
 gamerule playersNetherPortalDefaultDelay 1000000000
 difficulty easy
 
@@ -28,4 +29,7 @@ gamerule spawnRadius 3
 setworldspawn 0 230 0
 
 function vanillauhc:koorde/priprema
+
+scoreboard objectives add Priprema dummy
+scoreboard players set @a Priprema 1
 

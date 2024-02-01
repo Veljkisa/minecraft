@@ -1,12 +1,14 @@
 effect clear @a 
+scoreboard objectives remove Priprema
 clear @a 
 xp set @a 0 points
 xp set @a 0 levels
 gamemode survival @a
 gamerule doDaylightCycle true
+gamerule keepInventory false
 time set 0
 tp @a 0 250 0 
-fill -5 220 -5 5 224 5 minecraft:air 
+fill -8 220 -8 8 224 8 minecraft:air 
 spreadplayers 0 0 400 750 true @a
 
 effect give @a saturation 10 10
@@ -25,6 +27,7 @@ worldborder center 0 0
 worldborder damage buffer 5
 worldborder set 1500
 worldborder warning distance 20
+worldborder damage amount 1
 
 gamemode spectator @a[team=tim]
 
@@ -34,3 +37,5 @@ scoreboard objectives add Pocetak dummy
 scoreboard players set @a Pocetak 1
 
 scoreboard objectives add Smrti deathCount
+
+function vanillauhc:recepti/recepti

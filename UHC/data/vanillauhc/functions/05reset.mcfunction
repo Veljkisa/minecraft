@@ -1,4 +1,4 @@
-fill -5 220 -5 5 224 5 minecraft:air 
+fill -8 220 -8 8 224 8 minecraft:air 
 
 schedule clear vanillauhc:04pvp
 schedule clear vanillauhc:obavestenja/min15pvp 

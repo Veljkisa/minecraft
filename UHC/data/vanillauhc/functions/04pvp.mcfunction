@@ -1,4 +1,4 @@
-worldborder set 1 1500
+worldborder set 15 1500
 gamerule doDaylightCycle false
 title @a title {"text": "BORDER SE SMANJUJE", "color": "dark_red"}
 playsound minecraft:item.goat_horn.sound.2 ambient @a ~ ~2 ~ 100 1
@@ -25,3 +25,4 @@ schedule clear vanillauhc:obavestenja/min05pvp
 schedule function vanillauhc:obavestenja/min15kraj 600s
 schedule function vanillauhc:obavestenja/min10kraj 900s
 schedule function vanillauhc:obavestenja/min05kraj 1200s
+schedule function vanillauhc:obavestenja/kraj 1500s
