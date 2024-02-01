@@ -1,1 +1,0 @@
-effect give @a[gamemode=!spectator] minecraft:glowing 300  
