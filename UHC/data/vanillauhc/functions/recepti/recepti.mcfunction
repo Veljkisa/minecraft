@@ -1,3 +1,4 @@
+#otkljuca sve custom recepte svima
 recipe give @a vanillauhc:creeper_raw
 recipe give @a vanillauhc:creeper
 recipe give @a vanillauhc:skeleton

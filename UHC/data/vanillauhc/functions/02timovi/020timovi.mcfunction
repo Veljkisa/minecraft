@@ -1,3 +1,4 @@
+#izbaci sve iz timova i sve ih obrise
 team leave @a 
 team remove Plavi
 team remove Zuti

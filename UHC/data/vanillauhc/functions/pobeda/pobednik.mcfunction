@@ -1,3 +1,4 @@
+#proverava za sve timove da li su jedini igraci koji su zivi isti tim
 execute if entity @a[team=Zuti] unless entity @a[team=!Zuti,gamemode=!spectator] run function vanillauhc:pobeda/zuti
 execute if entity @a[team=Plavi] unless entity @a[team=!Plavi,gamemode=!spectator] run function vanillauhc:pobeda/plavi
 execute if entity @a[team=Zeleni] unless entity @a[team=!Zeleni,gamemode=!spectator] run function vanillauhc:pobeda/zeleni
