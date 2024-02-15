@@ -8,7 +8,7 @@ fill -13 220 -13 13 224 13 minecraft:barrier hollow
 fill -13 224 -13 13 224 13 minecraft:air
 
 #tp sve do waiting room
-tp @a 0 235 0
+schedule function vanillauhc:teleport/teleport 3s
 
 #za worldspawn i spawnpoint
 gamerule spawnRadius 3
@@ -43,3 +43,7 @@ function vanillauhc:koorde/priprema
 scoreboard objectives add etapa dummy
 scoreboard players set $global etapa 1
 tag @a remove cekanje
+
+#AHAHAHAHAHAHAHAHAHAHAH
+#jovan
+execute if entity @a[name=jovanjovanjovan] run function vanillauhc:jovan/jovan

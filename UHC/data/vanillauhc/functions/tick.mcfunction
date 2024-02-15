@@ -13,7 +13,7 @@ execute if score $global etapa matches 3 as @a if score @s Smrti matches 1 run f
 execute if score $global godapple matches 0 run clear @a[gamemode=survival] minecraft:enchanted_golden_apple
 
 #proverava za pobednika
-execute if entity @a[scores={Kraj=0}] run function vanillauhc:pobeda/pobednik
+execute if score $global etapa matches 3.. run function vanillauhc:pobeda/pobednik
 
 #dodaje 1 na tickove svaki tick
 scoreboard players add $global tikovi 1
