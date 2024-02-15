@@ -43,7 +43,3 @@ function vanillauhc:koorde/priprema
 scoreboard objectives add etapa dummy
 scoreboard players set $global etapa 1
 tag @a remove cekanje
-
-#AHAHAHAHAHAHAHAHAHAHAH
-#jovan
-execute if entity @a[name=jovanjovanjovan] run function vanillauhc:jovan/jovan
