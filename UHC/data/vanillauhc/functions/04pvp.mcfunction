@@ -29,9 +29,9 @@ schedule clear vanillauhc:obavestenja/min05pvp
 schedule function vanillauhc:obavestenja/min15kraj 600s
 schedule function vanillauhc:obavestenja/min10kraj 900s
 schedule function vanillauhc:obavestenja/min05kraj 1200s
-schedule function vanillauhc:obavestenja/kraj 1650s
+schedule function vanillauhc:kraj/kraj 1500s
 
-#tajmer kao bossbar za kraj gamea
+#tajmer kao bossbar za kraj
 bossbar set minecraft:bossbar name {"text":"Kraj","color":"red"}
 bossbar set minecraft:bossbar color red
 
@@ -40,5 +40,5 @@ scoreboard players set $global sekunde 0
 scoreboard players set $global sekundeostale 1500
 scoreboard players set $global tikovi 0
 
-scoreboard objectives add godapple dummy
-scoreboard players set $global godapple 0
+#postavi etapu
+scoreboard players set $global etapa 4

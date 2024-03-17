@@ -2,8 +2,6 @@
 effect clear @a 
 clear @a 
 
-#scoreboard objectives remove Priprema
-
 #skloni levele
 xp set @a 0 points
 xp set @a 0 levels
@@ -15,7 +13,6 @@ gamerule keepInventory false
 #prebaci na gamemode sve
 gamemode survival @a
 gamemode spectator @a[team=tim]
-
 
 #skloni sobu za cekanje
 fill -13 220 -13 13 224 13 minecraft:air 
@@ -42,13 +39,6 @@ function vanillauhc:recepti/recepti
 title @a title {"text": "START", "color": "red"}
 playsound minecraft:item.goat_horn.sound.0 ambient @a ~ ~2 ~ 100 1
 
-#border
-worldborder center 0 0 
-worldborder damage buffer 5
-worldborder set 1500
-worldborder warning distance 20
-worldborder damage amount 1
-
 #doda objective smrti koji sluzi da prebaci na spectator
 scoreboard objectives add Smrti deathCount
 
@@ -63,6 +53,10 @@ scoreboard players set $global sekunde 0
 scoreboard objectives add sekundeostale dummy
 scoreboard players set $global sekundeostale 1500
 
+#skloni scoreboard za timove
+scoreboard objectives remove timovi
+scoreboard objectives remove tim
+
 #napravi bossbar za tajmer
 bossbar add bossbar {"text":"Border","color":"white"}
 bossbar set minecraft:bossbar color white
@@ -72,3 +66,7 @@ bossbar set minecraft:bossbar style notched_20
 #obrise sve ispaljene strele i iteme na zemlji
 kill @e[type=item]
 kill @e[type=arrow]
+
+#doda objective za killove
+scoreboard objectives add Killovi playerKillCount 
+scoreboard objectives setdisplay sidebar Killovi

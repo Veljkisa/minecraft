@@ -8,9 +8,10 @@ item replace entity @a[tag=!cekanje] hotbar.0 with minecraft:iron_sword{Unbreaka
 item replace entity @a[tag=!cekanje] hotbar.1 with minecraft:iron_axe{Unbreakable:1}
 item replace entity @a[tag=!cekanje] hotbar.2 with minecraft:crossbow{Unbreakable:1}
 item replace entity @a[tag=!cekanje] hotbar.3 with minecraft:bow{Unbreakable:1}
-item replace entity @a[tag=!cekanje] hotbar.8 with minecraft:arrow 64
-item replace entity @a[tag=!cekanje] hotbar.7 with minecraft:arrow 64
-item replace entity @a[tag=!cekanje] hotbar.6 with minecraft:arrow 64
+item replace entity @a[tag=!cekanje] container.9 with minecraft:arrow 64
+item replace entity @a[tag=!cekanje] container.10 with minecraft:arrow 64
+item replace entity @a[tag=!cekanje] container.11 with minecraft:arrow 64
+item replace entity @a[tag=!cekanje] container.12 with minecraft:arrow 64
 item replace entity @a[tag=!cekanje] hotbar.4 with minecraft:golden_apple 64
 
 #doda tag cekanje da se ova funkcija vise ne pokrece

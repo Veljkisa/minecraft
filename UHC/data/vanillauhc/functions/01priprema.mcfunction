@@ -23,12 +23,12 @@ gamerule keepInventory true
 gamerule playersNetherPortalDefaultDelay 1000000000
 difficulty easy
 
-
 #border
 worldborder center 0 0 
 worldborder damage buffer 5
 worldborder set 1500
 worldborder warning distance 20
+worldborder damage amount 1
 
 #objective za srca (da pokazuje na Tab i ispod imena)
 scoreboard objectives add Srca health
@@ -43,3 +43,6 @@ function vanillauhc:koorde/priprema
 scoreboard objectives add etapa dummy
 scoreboard players set $global etapa 1
 tag @a remove cekanje
+
+#daje knjigu ako je ta opcija ukljucena
+execute if score $global knjiga matches 1 run function vanillauhc:00knjiga

@@ -7,10 +7,13 @@ execute if score $global etapa matches 3 run execute as @a[tag=!cekanje] run fun
 #execute as @a at @a[tag=cekanje] if block ~ ~-1 ~ minecraft:bedrock run function cekanje/nopvp
 
 #prebaci na spectator sve koji su ubijeni
-execute if score $global etapa matches 3 as @a if score @s Smrti matches 1 run function vanillauhc:etapa/pocetak 
+execute if score $global etapa matches 3 as @a if score @s Smrti matches 1 run function vanillauhc:etapa/pocetak
+
+#spectator ne moze da se udalji od teammatea na survival vise od 16 bloka kad pocne pvp
+execute if score $global etapa matches 4 run function vanillauhc:spectator/spectator
 
 #brise ench gold apple svima iz inv
-execute if score $global godapple matches 0 run clear @a[gamemode=survival] minecraft:enchanted_golden_apple
+execute if score $global etapa matches 4 run clear @a[gamemode=survival] minecraft:enchanted_golden_apple
 
 #proverava za pobednika
 execute if score $global etapa matches 3.. run function vanillauhc:pobeda/pobednik
@@ -25,3 +28,6 @@ execute if score $global sekundeostale matches 0..1500 if score $global tikovi m
 #enebluje za trigger
 scoreboard players enable @a koordinate
 scoreboard players enable @a tajmer
+
+#proverava da li je ukljucen scoreboard da pokaze timove
+execute if score $global tim matches 0 run function vanillauhc:knjiga/timovi

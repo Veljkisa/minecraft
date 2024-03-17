@@ -9,7 +9,8 @@ schedule clear vanillauhc:obavestenja/min05pvp
 schedule clear vanillauhc:obavestenja/min15kraj
 schedule clear vanillauhc:obavestenja/min10kraj
 schedule clear vanillauhc:obavestenja/min05kraj
-schedule clear vanillauhc:obavestenja/kraj
+schedule clear vanillauhc:kraj/kraj
+schedule clear vanillauhc:kraj/glowing
 
 #vrati worldborder na default
 worldborder set 30000000
@@ -40,9 +41,7 @@ scoreboard objectives remove Killovi
 scoreboard objectives remove Smrti
 #scoreboard objectives remove Pocetak
 scoreboard objectives remove Kraj
-scoreboard objectives remove Priprema
 scoreboard objectives remove etapa
-scoreboard objectives remove godapple 
 
 #skloni objectives za koordinate
 scoreboard objectives remove dx 
@@ -72,3 +71,10 @@ bossbar remove minecraft:bossbar
 #skloni tagove koji su bili tokom igre
 tag @a remove cekanje
 tag @a remove compare
+
+#skloni scoreboard za timove
+scoreboard objectives remove timovi
+scoreboard objectives remove tim
+
+#skloni scoreboard za knjigu
+scoreboard objectives remove knjiga
