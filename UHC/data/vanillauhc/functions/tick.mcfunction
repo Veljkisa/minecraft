@@ -7,7 +7,7 @@ execute if score $global etapa matches 3 run execute as @a[tag=!cekanje] run fun
 #execute as @a at @a[tag=cekanje] if block ~ ~-1 ~ minecraft:bedrock run function cekanje/nopvp
 
 #prebaci na spectator sve koji su ubijeni
-execute if score $global etapa matches 3 as @a if score @s Smrti matches 1 run function vanillauhc:etapa/pocetak
+execute if score $global etapa matches 3.. as @a if score @s Smrti matches 1 run function vanillauhc:etapa/pocetak
 
 #spectator ne moze da se udalji od teammatea na survival vise od 16 bloka kad pocne pvp
 execute if score $global etapa matches 4 run function vanillauhc:spectator/spectator
