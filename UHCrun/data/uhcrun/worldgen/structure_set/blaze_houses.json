@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "uhcrun:blaze_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 8,
+      "other_set": "minecraft:villages"
+    },
+    "spacing": 18,
+    "separation": 6,
+    "salt": 1646207470
+  }
+}

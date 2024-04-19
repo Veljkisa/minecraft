@@ -1,0 +1,9 @@
+scoreboard objectives add gravel minecraft.mined:minecraft.gravel
+scoreboard objectives add sand minecraft.mined:minecraft.sand
+scoreboard objectives add redsand minecraft.mined:minecraft.red_sand
+scoreboard objectives add iron minecraft.mined:minecraft.iron_ore 
+scoreboard objectives add gold minecraft.mined:minecraft.gold_ore
+scoreboard objectives add copper minecraft.mined:minecraft.copper_ore
+scoreboard objectives add diron minecraft.mined:minecraft.deepslate_iron_ore
+scoreboard objectives add dgold minecraft.mined:minecraft.deepslate_gold_ore
+scoreboard objectives add dcopper minecraft.mined:minecraft.deepslate_copper_ore

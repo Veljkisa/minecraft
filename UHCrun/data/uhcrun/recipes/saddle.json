@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+        "aaa",
+        "bcb"
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:leather"
+        },
+        "b": {
+            "item": "minecraft:copper_ingot"
+        },
+        "c": {
+            "item": "minecraft:string"
+        }
+    },
+    "result": {
+        "item": "minecraft:saddle",
+        "count": 1
+    }
+}
